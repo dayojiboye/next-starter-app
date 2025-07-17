@@ -14,8 +14,8 @@ const badgeVariants = cva(
         error: "bg-[#DF1C4126] text-red [&>span]:bg-red border-none",
         normal: "bg-[#FAFFFC] text-[#027A48] border-[#DFE1E7] [&>span]:bg-[#12B76A]",
         purple: "bg-[#F6F4FE] text-primary [&>span]:bg-purple border-[#F6F4FE]",
-        gold: "bg-white border-[#ECFDF3] text-gold [&>span]:bg-gold",
-        info: "bg-white border-[#ECFDF3] text-[#3783F1] [&>span]:bg-[#3783F1]",
+        gold: "bg-[#f9c56480] border-none text-gold [&>span]:bg-gold",
+        info: "bg-white border-blue text-[#3783F1] [&>span]:bg-[#3783F1]",
       },
     },
     defaultVariants: {

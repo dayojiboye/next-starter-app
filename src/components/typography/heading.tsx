@@ -11,6 +11,9 @@ const headingStyles = cva(["text-primary"], {
       sm: ["text-lg", "font-bold"],
     },
   },
+  defaultVariants: {
+    variant: "xl",
+  },
 });
 
 type HeadingProps = ComponentProps<"h1"> & ComponentProps<"h2"> & ComponentProps<"h3">;

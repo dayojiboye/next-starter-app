@@ -6,11 +6,9 @@ import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
-import "react-tooltip/dist/react-tooltip.css";
 
-import AppQueryProvider from "@/utils/query-provider";
 import React from "react";
-import ReduxProvider from "@/store/redux-provider";
+import { ReactQueryProvider, ReduxProvider } from "@/providers";
 import PageWrapper from "@/components/page-wrapper/page-wrapper";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -41,11 +39,11 @@ export default function RootLayout({
             duration: 4000,
           }}
         />
-        <AppQueryProvider>
+        <ReactQueryProvider>
           <ReduxProvider>
             <PageWrapper>{children}</PageWrapper>
           </ReduxProvider>
-        </AppQueryProvider>
+        </ReactQueryProvider>
       </body>
     </html>
   );
