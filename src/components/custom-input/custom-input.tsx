@@ -66,7 +66,7 @@ export default function CustomInput({
           }}
           className={cn(
             `block h-[44px] py-[10px] text-sm w-full rounded-[32px] bg-white border focus:shadow-inputFocus ${
-              Icon ? "px-[38px]" : RightIcon ? "pr-[30px] pl-[14px]" : "px-[14px]"
+              Icon ? "pl-[38px] pr-[14px]" : RightIcon ? "pr-[30px] pl-[14px]" : "px-[14px]"
             } ${error ? "border-red focus:border-red" : "border-[#C1C7D0] focus:border-[#d6bbfb]"}`,
             inputClass,
           )}

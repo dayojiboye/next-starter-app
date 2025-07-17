@@ -78,6 +78,7 @@ export default function CustomFilterDropdown({
         const ItemIcon = typeof item !== "string" && item?.icon ? item.icon : undefined;
         const SelectedIcon = selectedIcon ? selectedIcon : undefined;
         const isSelected = itemValue === currentSelectedValue;
+
         return (
           <MenuItem
             key={index}

@@ -17,14 +17,14 @@ const statusTextVariants = cva("font-medium", {
   },
 });
 
-export interface StatusTextProps extends ComponentProps<"div">, VariantProps<typeof statusTextVariants> {
+export interface StatusTextProps extends ComponentProps<"span">, VariantProps<typeof statusTextVariants> {
   label: string;
 }
 
 export default function StatusText({ className, variant, label, ...props }: StatusTextProps) {
   return (
-    <div className={cn(statusTextVariants({ variant }), className)} {...props}>
+    <span className={cn(statusTextVariants({ variant }), className)} {...props}>
       {titleCase(formatEnum(label))}
-    </div>
+    </span>
   );
 }

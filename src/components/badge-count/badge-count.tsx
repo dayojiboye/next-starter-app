@@ -6,7 +6,7 @@ type Props = {
   className?: string;
 };
 
-export default function CustomBadgeCount({ children, className }: Props) {
+export default function BadgeCount({ children, className }: Props) {
   return (
     <span
       className={cn(

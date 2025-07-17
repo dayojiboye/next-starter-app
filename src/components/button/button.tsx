@@ -57,7 +57,7 @@ export default function Button({
       disabled={disabled || loading}
       {...props}
     >
-      {loading ? <LoadingSpinner className={cn(spinnerClassName)} /> : children}
+      {loading ? <LoadingSpinner className={cn("shrink-0", spinnerClassName)} /> : children}
     </ButtonOrLink>
   );
 

@@ -64,22 +64,19 @@ export default function CustomPasswordInput({
             onBlur?.(e);
           }}
           className={cn(
-            `block h-[44px] py-[10px] text-sm w-full rounded-[32px] bg-white border pr-4 focus:shadow-inputFocus ${
-              Icon ? "pl-[10px]" : "pl-[14px]"
+            `block h-[44px] py-[10px] text-sm w-full rounded-[32px] bg-white border pr-[34px] focus:shadow-inputFocus ${
+              Icon ? "pl-[34px]" : "pl-[14px]"
             } ${error ? "border-red focus:border-red" : "border-[#C1C7D0] focus:border-[#d6bbfb]"}`,
             inputClass,
           )}
           {...props}
         />
 
-        <label
-          htmlFor={props.id ? props.id : name}
-          className="pr-4 absolute top-[50%] translate-y-[-50%] z-[1] right-0 flex items-center justify-center"
-        >
-          <button type="button" className=" w-fit h-fit" onClick={() => setShowPassword(!showPassword)}>
+        <div className="pr-4 absolute top-[50%] translate-y-[-50%] z-[1] right-0 flex items-center justify-center">
+          <button type="button" className="w-fit h-fit" onClick={() => setShowPassword(!showPassword)}>
             {showPassword ? <EyeSlashIcon className="w-4 h-4" /> : <EyeIcon className="w-4 h-4" />}
           </button>
-        </label>
+        </div>
       </div>
 
       {error && <span className="text-red text-sm mt-1 block w-fit">{error}</span>}
