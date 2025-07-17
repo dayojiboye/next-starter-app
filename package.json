@@ -1,27 +1,61 @@
 {
-  "name": "next-starter-app",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.4.1"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.4.1",
-    "@eslint/eslintrc": "^3"
-  }
+	"name": "next-starter-app",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "^2.8.2",
+		"@szhsin/react-menu": "^4.4.1",
+		"@tanstack/react-query": "^5.83.0",
+		"axios": "^1.10.0",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"cookies-next": "^6.1.0",
+		"date-fns": "^4.1.0",
+		"formik": "^2.4.6",
+		"next": "15.4.1",
+		"nextjs-toploader": "^3.8.16",
+		"react": "19.1.0",
+		"react-datepicker": "^8.4.0",
+		"react-dom": "19.1.0",
+		"react-hot-toast": "^2.5.2",
+		"react-modal": "^3.16.3",
+		"react-paginate": "^8.3.0",
+		"react-phone-number-input": "^3.4.12",
+		"react-redux": "^9.2.0",
+		"react-select": "^5.10.2",
+		"redux": "^5.0.1",
+		"redux-persist": "^6.0.0",
+		"tailwind-merge": "^3.3.1",
+		"title-case": "^4.3.2",
+		"usehooks-ts": "^3.1.1",
+		"yup": "^1.6.1"
+	},
+	"devDependencies": {
+		"@eslint/eslintrc": "^3",
+		"@svgr/webpack": "^8.1.0",
+		"@tailwindcss/postcss": "^4",
+		"@tanstack/eslint-plugin-query": "^5.81.2",
+		"@tanstack/react-query-devtools": "^5.83.0",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-datepicker": "^7.0.0",
+		"@types/react-dom": "^19",
+		"@types/react-modal": "^3.16.3",
+		"@types/redux-persist": "^4.3.1",
+		"eslint": "^9",
+		"eslint-config-next": "15.4.1",
+		"prettier": "^3.6.2",
+		"sass": "^1.89.2",
+		"tailwindcss": "^4",
+		"typescript": "^5"
+	},
+	"resolutions": {
+		"@types/react": "^18.0.0"
+	}
 }
