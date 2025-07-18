@@ -43,14 +43,14 @@ export default function CustomTablePopOver({
 
       <ControlledMenu
         {...hoverProps}
-        align={props.align || "start"}
+        align={props.align || "center"}
         position={props.position || "initial"}
         direction="bottom"
         state={isOpen ? "open" : "closed"}
         anchorRef={ref}
         onClose={() => setOpen(false)}
         menuClassName={cn(
-          "!mt-[10px] min-w-[194px] rounded-[10px] z-[50] bg-white p-2 shadow-[0_16px_40px_-8px_rgba(88,92,95,0.16)] border border-[#E2E4E9]",
+          "!mt-[10px] min-w-auto rounded-[10px] z-[50] bg-white p-2 shadow-[0_16px_40px_-8px_rgba(88,92,95,0.16)] border border-[#E2E4E9]",
           menuClassName,
         )}
         // portal={{
