@@ -11,7 +11,7 @@ export default function FullScreenLoader({ className }: { className?: string }) 
           className,
         )}
       >
-        <LoadingSpinner className="h-6 w-6" />
+        <LoadingSpinner />
         <p className="text-sm font-medium text-center mt-1">Please wait...</p>
       </div>
     </div>

@@ -39,7 +39,7 @@ export default function FullImageViewer({ className, imageObject, show, onClose,
         onClick={() => onClose()}
       >
         <div
-          className="w-[95%] max-w-[821px] max-h-[558.62px] bg-transparent relative"
+          className="w-[95%] max-w-[821px] max-h-[95vh] bg-transparent relative"
           onClick={(e) => e.stopPropagation()}
         >
           <button
@@ -53,7 +53,7 @@ export default function FullImageViewer({ className, imageObject, show, onClose,
             width={800}
             height={800}
             src={imageObject.imageUrl}
-            className={cn("w-full h-full object-contain", imageClassName)} // rounded-[50.78px]
+            className={cn("w-full h-full object-contain", imageClassName)}
           />
         </div>
       </div>

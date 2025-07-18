@@ -4,7 +4,7 @@ import React from "react";
 export default function LoadingSpinner({ className }: { className?: string }) {
   return (
     <svg
-      className={cn("size-5 animate-spin text-white", className)}
+      className={cn("size-5 animate-spin text-[#7b7979]", className)}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
